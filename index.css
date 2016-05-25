@@ -19,3 +19,111 @@ h1 {
 	margin-left:auto;
 	margin-right:auto;
 }
+
+
+.st0{fill:none;stroke:#95a5a6;stroke-width:4;stroke-miterlimit:5;}
+.st1{fill:none;stroke:#95a5a6;stroke-width:4;stroke-miterlimit:10;}
+
+#bird_eye:hover {
+	fill:#000000;
+}
+
+#bird_eye.selected {
+	fill:#000000;
+}
+
+#bird_wing:hover{
+	fill:#2980b9;
+}
+
+#bird_wing.selected{
+	fill:#2980b9;
+}
+
+#bird_body:hover{
+	fill:#3498db;
+}
+
+#bird_body.selected {
+	fill:#3498db;
+}
+
+#bird_snout:hover{
+	fill:#ff613a;
+}
+
+#bird_snout.selected {
+	fill:#ff613a;
+}
+
+#bird_eye{
+	stroke-dasharray:800;
+	stroke-dashoffset:0;
+	-o-animation: dash 6s linear forwards infinite;
+	-webkit-animation: dash 6s linear forwards infinite;
+	-moz-animation: dash 6s linear forwards infinite;
+	animation: dash 6s linear forwards infinite;
+}
+
+#bird_snout{
+	stroke-dasharray:800;
+	stroke-dashoffset:0;
+	-o-animation: dash 5s linear forwards infinite;
+	-webkit-animation: dash 5s linear forwards infinite;
+	-moz-animation: dash 5s linear forwards infinite;
+	animation: dash 5s linear forwards infinite;
+}
+
+#bird_wing{
+	stroke-dasharray:800;
+	stroke-dashoffset:0;
+	-o-animation: dash 4s linear forwards infinite;
+	-webkit-animation: dash 4s linear forwards infinite;
+	-moz-animation: dash 4s linear forwards infinite;
+	animation: dash 4s linear forwards infinite;
+}
+
+#bird_body{
+	stroke-dasharray:800;
+	stroke-dashoffset:0;
+	-o-animation: dash 4s linear forwards infinite;
+	-webkit-animation: dash 4s linear forwards infinite;
+	-moz-animation: dash 4s linear forwards infinite;
+	animation: dash 4s linear forwards infinite;
+}
+
+@-moz-keyframes dash {
+	from {
+		stroke-dashoffset: 800;
+	}
+	to {
+		stroke-dashoffset:0;
+	}
+}
+
+@-o-keyframes dash {
+	from {
+		stroke-dashoffset: 800;
+	}
+	to {
+		stroke-dashoffset:0;
+	}
+}
+
+@-webkit-keyframes dash {
+	from {
+		stroke-dashoffset: 800;
+	}
+	to {
+		stroke-dashoffset:0;
+	}
+}
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 800;
+	}
+	to {
+		stroke-dashoffset:0;
+	}
+}
