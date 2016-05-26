@@ -3,7 +3,13 @@
 body {
 	background-color:#bdc3c7;
 	}
-	
+
+section {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
 h1 {
 	text-align:center;padding-top:50px;
 	font-family: 'Montserrat', sans-serif;
@@ -11,15 +17,30 @@ h1 {
 	color:#7f8c8d;
 	}
 
+#top {
+	height:100vh;
+}	
+	
+#links {
+	background-color:#efefef;
+	height:1080px;
+}
+span.white {
+	color:#efefef;
+}
+
 .center {
 	text-align:center;
-	padding: 150px 0;
-	max-width:500px;
-	max-height:500px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
+#bird-box, object {
+	margin-top: 100px;
+	max-width:500px;
+	height:auto;
+	margin-bottom:50px;
+}
 
 .st0{fill:none;stroke:#95a5a6;stroke-width:4;stroke-miterlimit:5;}
 .st1{fill:none;stroke:#95a5a6;stroke-width:4;stroke-miterlimit:10;}
@@ -126,4 +147,25 @@ h1 {
 	to {
 		stroke-dashoffset:0;
 	}
+}
+
+.bottomMenu {
+	padding-top:200px;
+	max-width:600px;
+	height:600px;
+}
+
+
+.square {
+	width:250px;
+	height:250px;
+	background-color:#7f8c8d;
+	display:inline-flex;
+	transition: transform 0.25s ease;
+	text-align:center;
+	color:#efefef;
+}
+
+.square:hover {
+	transform:scale(0.9);
 }
