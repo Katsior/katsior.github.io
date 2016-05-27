@@ -113,6 +113,8 @@ span.white {
 	animation: dash 4s linear forwards infinite;
 }
 
+
+
 @-moz-keyframes dash {
 	from {
 		stroke-dashoffset: 800;
@@ -168,4 +170,8 @@ span.white {
 
 .square:hover {
 	transform:scale(0.9);
+}
+
+#img1 {
+	background-color:#3498db;
 }
