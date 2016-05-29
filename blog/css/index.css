@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+body {
+	font-family:"Open Sans", sans-serif;
+	background:#f3f3f3;
+	}
+
+#content > * {
+	border: 1px solid #eee;
+	background: #fff;
+}
+
+a {
+	text-decoration:none;
+	color:#32465a;
+}
+	
+#content {
+	max-width:770px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-right:20px;
+	}
+
+header > div, header > nav, nav > ul, nav > div, nav > ul li, main, aside {
+	display:inline-block;
+
+}
+
+p {
+	color: #666;
+	text-align:justify;
+	line-height: 1.625;
+	letter-spacing: .01rem;
+}
+
+header {
+	margin-top:20px;
+	width:auto;
+	max-width:770px;
+	height:auto;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	display:block;
+}
+
+nav {
+	width:100%;
+	margin-top:20px;
+	height:auto;
+	}
+
+nav a {
+	font-family: "Lobster", cursive;
+	font-size:24px;
+}
+
+a {
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #16a085;
+}
+
+
+button {
+	background:none;
+	border: solid 1px #32465a;
+	font-family: "Lobster", cursive;
+	color: #32465a;
+	transition:background-color 0.25s ease;
+}
+
+#searchbar {
+	border: solid 1px #32465a;
+	color: #32465a;
+	font-family:"Open Sans", sans-serif;}
+
+button:hover {
+	background-color:#16a085;
+	color:#eee;
+	border: solid 1px #16a085;
+}
+
+#searchbar-wrap {
+	float:right;
+	padding-right:20px;
+	height:auto;
+}
+
+
+nav ul li {
+	margin-left:20px;
+}
+
+
+#title {
+	width:100%;
+	text-align:center;
+}
+
+
+h1 {
+	font-size:4.5rem;
+	color:#32465a;
+	margin-bottom:10px;
+	font-family: "Lobster", cursive;
+}
+
+h2 {
+	color:#34495e;
+	font-size:20px;
+	font-family: "Covered By Your Grace", cursive;
+}
+
+h3 {
+	font-family: "Covered By Your Grace", cursive;
+}
+
+main {
+	width:60%;
+	height:auto;
+	margin-bottom:20px;
+}
+
+main button {
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.post, .aside-post {
+	margin-left:20px;
+	margin-right:20px;
+	width:100%;
+	padding-bottom:20px;
+	margin-top:20px
+}
+
+.text {
+	width:100%;
+}
+
+h3 {
+	font-size:xx-large;
+}
+
+.image-post {
+	width:100%;
+	height:300px;
+	background-color:#95a5a6;
+	background-position:center;
+	background-size:cover;
+}
+
+#img1 {
+	background-image:url(../images/29052016.jpg);
+}
+
+#img2 {
+	background-image:url(../images/28052016.jpg);
+}
+
+#img3 {
+	background-image:url(../images/27052016.jpg);
+}
+
+.post {
+	border-bottom: 2px solid #eee;
+	width:90%;
+}
+
+.post p {
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.read-more {
+	height:60px;
+	width:150px;
+	background-color:#16a085;
+	color:#eee;
+	transition:background-color 0.2s ease;
+	border: solid 1px #16a085;
+}
+
+.read-more:hover {
+	background-color:#16a085;
+	border: solid 1px #32465a;
+	color: #32465a;
+	background:none;
+}
+
+.read-more span {
+	text-align:center;
+	vertical-align:middle;
+	line-height:60px;
+	display:block;
+	
+}
+
+aside {
+	width:35%;
+	height:auto;
+	float:right;
+	margin-bottom:20px;
+	display:block;
+	clear:both;
+}
+
+.aside-post > p {
+	width:85%;
+}
+
+.image-aside {
+	width:85%;
+	height:150px;
+	background-color:#95a5a6;
+	margin-bottom:10px;
+	background-position:center;
+	background-size:cover;
+	background-image:url(../images/26052016.jpg);
+}
+
+aside .header-post {
+	margin-bottom:10px;
+}
+
+footer {
+	display:block;
+	height:100px;
+	padding-top:2%;
+	margin-bottom:5%;
+}
+
+footer p {
+	margin:auto;
+	vertical-align:middle;
+	text-align:center;
+	}
+
+#blogpost {
+	margin: 20px;
+}
+
+#blogpost .image-post, #blogpost .text {
+	margin-top:20px;
+	width:100%;
+}
+
+#blogpost .header-post > p {
+	margin-top:5px;
+}
+
+#previous {
+	margin-top:20px;
+	width:40%;
+	height:50px;
+	font-size:20px;
+	}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 548px) {
+	main {
+		width:100%;
+	}
+	aside {
+		width:100%;
+		float:none;
+	}
+	
+	.image-post {
+	height:200px;
+	width:100%;
+}
+
+.post {
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.text {
+	width:100%;
+}
+
+#searchbar-wrap {
+	margin-top:20px;
+	float:none;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	padding-right:0;
+}
+
+nav ul {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+nav ul li:nth-child(1) {
+	margin-left:0;
+}
+
+#searchbar-wrap > * {
+	height:50px;
+	width:100%;
+	font-size:20px;
+	margin-top:5px;
+}
+	
+h2 {
+	padding-top:10px;
+	margin-bottom:20px;
+}
+
+
+
+}
