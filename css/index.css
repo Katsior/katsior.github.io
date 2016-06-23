@@ -23,7 +23,8 @@ h1 {
 	
 #links {
 	background-color:#efefef;
-	height:1080px;
+	min-height:1080px;
+	height:auto;
 }
 span.white {
 	color:#efefef;
@@ -155,6 +156,7 @@ span.white {
 	padding-top:200px;
 	max-width:600px;
 	height:600px;
+	display:none;
 }
 
 
