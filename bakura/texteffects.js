@@ -67,7 +67,7 @@ http://fourdesire.com
     textEffect: function(options) {
       var getRandomChar, log, settings, timer;
       settings = {
-        fps: 20,
+        fps: 50,
         repeat: 10,
         debug: false,
         reverse: false,

@@ -1,11 +1,19 @@
 function main() {
 	var title = $(".text-effect-loop");
 	var logo = $("#logo");
+	var logopart = $(".st1");
 	var bg = $(".big");
 	var smll = $(".small");
-	
+	logo.hide()
+	setTimeout(function(){
+		logo.fadeIn(1000);
+	}, 1000);
+	setTimeout(function(){
+	title.css("visibility", "visible");
 	title.textEffect();
-	
+	}, 1000);
+
+
 	bg.on("mouseover", function(){bg.textEffect();});
 	smll.on("mouseover", function(){smll.textEffect();});
 }
@@ -25,8 +33,32 @@ function run() {
                 image.src = 'images/bg.png';
             }
 
-window.onload = function() {
-       "use strict";
-	   main();
+
+$(document).ready(function(){
+
+/*! Fades in whole page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+		main();
 	   run();
-};
+}); 
+
+ /*! Fades out the whole page when clicking links */
+ $('a').click(function(e) {
+ e.preventDefault();
+ newLocation = this.href;
+ $('body').fadeOut('slow', newpage);
+ });
+ function newpage() {
+ window.location = newLocation;
+ }
+
+
+function Reload() {
+try {
+var headElement = document.getElementsByTagName("head")[0];
+if (headElement && headElement.innerHTML)
+headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
+}
+catch (e) {}
+}

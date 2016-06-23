@@ -2,7 +2,7 @@
 
 
 
-html, body {
+body#home {
 	background-color:#000;
 	overflow:hidden;
 	background-image:url(images/bg.png);
@@ -11,10 +11,17 @@ html, body {
 	background-size:cover;
 }
 
+body#about {
+	background: url(images/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 #box {
-	color:white;
+	color:#fff;
 	z-index:4;
 	position:fixed;
 	margin-top:15%;
@@ -23,15 +30,52 @@ html, body {
 	height:auto;
 	width:600px;
 	margin-right:50%;
+	visibility:hidden;
 }
 
-h1 {
+#box.page2 {
+	margin-top:10%;
+	background-color:rgba(0,0,0,0.75);
+	visibility:visible;
+	padding:20px 20px 20px 20px;
+}
+
+h1, h2, .back {
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
 	text-shadow:2px 2px #000000;
 	font-size:4.5em;
 	font-weight:300;
 	text-align:center;
+}
+
+.back, p {
+	font-family: Oxygen, sans-serif;
+	font-size:1em;
+	visibility:visible!important;
+
+}
+
+p {
+	margin-top:20px;
+	line-height:1.5em;
+	padding-right:20px;
+	text-justify:auto;
+}
+
+h2 {
+	margin-top:25px;
+	font-size:1.5em!important;
+}
+
+a {
+	color:#fff;
+	text-decoration:none;
+	transition:color 0.5s ease;
+}
+
+a:hover {
+	color:#c0392b;
 }
 
 .big {
@@ -43,12 +87,9 @@ h1 {
 	width:100%;
 	margin-left:auto;
 	margin-right:auto;
-	transition:transform 0.3s;
+	visibility:visible!important;
 }
 
-#logo:hover {
-	transform:scale(1.1);
-}
 
 .st1{fill:#FFFFFF;}
 
