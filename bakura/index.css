@@ -5,6 +5,10 @@
 html, body {
 	background-color:#000;
 	overflow:hidden;
+	background-image:url(images/bg.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 
@@ -53,6 +57,7 @@ h1 {
 @media only screen and (max-width: 1028px) {
     #box
      {
+		 margin-top:5%;
 		 width:100%;
         margin-left:auto;
 		margin-right:auto;
