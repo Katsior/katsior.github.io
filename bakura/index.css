@@ -4,11 +4,11 @@
 
 body#home {
 	background-color:#000;
-	overflow:hidden;
 	background-image:url(images/bg.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
+	overflow:hidden;
 }
 
 body#about {
@@ -98,6 +98,7 @@ a:hover {
 @media only screen and (max-width: 1028px) {
     #box
      {
+		 position:relative;
 		 margin-top:50px;
 		 width:100%;
         margin-left:auto;

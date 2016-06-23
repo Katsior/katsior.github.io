@@ -12,26 +12,26 @@ function main() {
 	title.css("visibility", "visible");
 	title.textEffect();
 	}, 1000);
-
-
+	
+	
 	bg.on("mouseover", function(){bg.textEffect();});
 	smll.on("mouseover", function(){smll.textEffect();});
 }
 
 function run() {
-                var image = document.getElementById('background');
-                image.onload = function() {
-                    var engine = new RainyDay({
-                        image: this,
-						blur:0,
-						opacity:0.5
-                    });
-                    engine.rain([ [1, 2, 8000] ]);
-                    engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
-                };
-                image.crossOrigin = 'anonymous';
-                image.src = 'images/bg.png';
-            }
+		var image = document.getElementById('background');
+		image.onload = function() {
+			var engine = new RainyDay({
+				image: this,
+				blur:0,
+				opacity:0.5
+			});
+			engine.rain([ [1, 2, 8000] ]);
+			engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+		};
+		image.crossOrigin = 'anonymous';
+		image.src = 'images/bg.png';
+	}
 
 
 $(document).ready(function(){
