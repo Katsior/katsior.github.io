@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma);
+
+body, html {
+	height:100%;
+}
+
+#intro {
+	
+	background-color:#000000;
+	position:fixed;
+	height:100%;
+	width:100%;
+	z-index:101;
+}
+
+h1 {
+	display:none;
+	font-family: 'Michroma', sans-serif;
+	color:#efefef;
+	text-align:center;
+	font-size:5em;
+	margin-top:25%;
+	text-transform:uppercase;
+}
+
+#left h2 {
+	position:absolute;
+	font-family: 'Michroma', sans-serif;
+	color:#efefef;
+	/*text-transform:uppercase;*/
+	text-align:center;
+	font-size:4em;
+	margin:0 auto;
+	top:49%;
+	left:40%;
+}
+
+#right h2 {
+	position:absolute;
+	font-family: 'Michroma', sans-serif;
+	color:#efefef;
+	/*text-transform:uppercase;*/
+	text-align:center;
+	font-size:4em;
+	margin:0 auto;
+	top:50%;
+	right:40%;
+}
+
+h3 {
+	font-family: 'Michroma', sans-serif;
+	color:#efefef;
+	font-size:auto;
+	text-align:center;
+	margin-top:100%;
+}
+
+nav {
+	height:100px;
+	background-color:black;
+}
+
+
+#wrapper {
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+#center {
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+	background-color:black;
+	width:10%;
+	height:100%;
+	position:absolute;
+}
+
+#left {
+	position:absolute;
+	width:45%;
+	height:100%;
+	background-color:#34495e;
+	background-image:url(../images/left.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	background-size:cover;
+	transition: width ease 0.8s;
+	z-index:1;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+}
+
+#left:hover {
+	width:90%;
+	z-index:100;
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%); 
+    -o-filter: grayscale(0%); 
+}
+
+#right {
+	position:absolute;
+	right:0;
+	width:45%;
+	height:100%;
+	background-image:url(../images/right.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size:cover;
+	transition: width ease 0.8s;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+}
+
+#right:hover {
+	width:90%;
+	z-index:100;
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%); 
+    -o-filter: grayscale(0%);
+}
