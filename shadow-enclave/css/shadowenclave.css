@@ -147,24 +147,15 @@ nav {
     -o-filter: grayscale(0%);
 }
 
-@media only screen and (max-width: 1272px) {
-    h2, #right h2, #left h2{
-		font-size:2em;
-	}
-	
-	#right h2 {
-		right:10%;
-	}
-	
-	#center {
-		width:20%;
-		z-index:110;
-	}
-}
+
 
 @media only screen and (max-width: 1272px) {
-   	h3 {
-		margin-top:20%;
+   	body {
+		background-color:#000000;
+		}
+	
+	h3 {
+		margin-top:10%;
 	}
 	
 	a h3 {
@@ -172,15 +163,17 @@ nav {
 		font-size:3em;
 	}
 	
+	#shadow-enc-logo {
+		margin-top:5%;
+	}
+	
 	#right, #left {
 		display: none;
 	}
 	
-	
-	
 	#center {
 		height:100%;
 		width:100%;
-		z-index:110;
+		padding-bottom:20%;
 	}
 }
