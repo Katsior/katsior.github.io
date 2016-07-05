@@ -33,5 +33,8 @@ function main(){
 
 $(document).ready(function() {
     "use strict";
+	if( document.documentElement.getAttribute('data-browser') !== null ){
+    document.getElementById("intro").style.display = "none";
+	}
 	main();
 });
