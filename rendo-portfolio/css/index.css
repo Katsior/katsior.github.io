@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:600);
 
-h1 {
+h1, h2, h3, h4, p, a {
 	font-family: 'Cabin', sans-serif;
 }
 
@@ -8,6 +8,7 @@ h1 {
 	width:100%;
 	z-index:100;
 	position:absolute;
+
 	}
 
 .header {
@@ -67,6 +68,14 @@ h1 {
 	height:500px;
 	background-color:#348899;
 	top:0;
+	transition:all 0.7s;
+	transform:translate(-100%,0);
+	-webkit-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	-moz-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	z-index:-1;
+	overflow:hidden;
 }
 
 #top-img h1 {
@@ -76,6 +85,13 @@ h1 {
 	text-align:center;
 	padding-top:250px;
 	font-size:2.6em;
+	transition:all 0.7s;
+	transition-delay:0.5s;
+	transform:translate(-100%,0);
+	-webkit-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	-moz-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
 }
 
 #top-img h1 span {
@@ -86,9 +102,15 @@ h1 {
 	background:#fff;
 	max-width:1080px;
 	height:auto;
-	margin-top:-100px;
+	width:auto;
+	margin-top:800px;
 	margin-left:auto;
 	margin-right:auto;
+	padding-bottom:100px;
+	overflow:hidden;
+	transition: all 0.5s;
+	transition-delay:1s;
+	z-index:99;
 }
 
 .grid-item, .grid-item-long {
@@ -96,6 +118,7 @@ h1 {
 	float:left;
 	background-color:#4F4F4F;
 	transition:all 0.25s;
+	overflow: hidden;
 }
 
 .grid-item {
@@ -106,9 +129,62 @@ h1 {
 	width:100%;
 }
 
-.grid-item:hover, .grid-item-long:hover {
+/*.grid-item:hover, .grid-item-long:hover {
 	background-color:#fff;
+}*/
+
+.image {
+	display:block;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
 }
+
+.overlay {
+	transition:transform 0.3s;
+	transform:translate(-100%,0);
+	width:100%;
+    height:100%;
+    background:rgba(255,255,255,1);
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+	vertical-align:middle;
+	line-height:500px;
+}
+
+.grid-item a, .grid-item-long a {
+	position: relative;
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  font-size:24px;
+}
+
+.one {
+	color:#348899;
+}
+
+.grid-item a:hover .overlay, .grid-item-long a:hover .overlay{
+
+	transform:translate(0,0);
+	transition:transform 0.3s;
+}
+
+footer {
+	position:relative;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	height:250px;
+	background-color:#343642;
+}
+
+
 
 @media screen and (max-width: 1080px){
 	.grid-item, .grid-item-long {
@@ -116,6 +192,11 @@ h1 {
 	float:left;
 	clear:both;
 	}
+
+	.overlay {
+		line-height:250px;
+	}
+
 	.grid-item {
 		width:100%;
 	}
@@ -126,11 +207,11 @@ h1 {
 		padding-left:50px;
 		padding-right:50px;
 	}
-	
+
 	.logo img {
 		height:50px;
 	}
-	
+
 	#menu-trigger {
 		margin-left:auto;
 		margin-right:auto;
@@ -142,6 +223,5 @@ h1 {
 		padding-left:25px;
 		padding-right:25px;
 	}
-	
-}
 
+}

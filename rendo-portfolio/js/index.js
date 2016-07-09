@@ -1,8 +1,7 @@
 jQuery(document).ready(function() {
-    jQuery('.toggle-nav').click(function(e) {
-        jQuery(this).toggleClass('active');
-        jQuery('.menu ul').toggleClass('active');
- 
-        e.preventDefault();
-    });
+	"use strict";
+    
+	$("#top-img").css("transform","translate(0%,0)");
+	$("#content").css("margin-top","-100px");
+	$("#top-img h1").css("transform","translate(0%,0)");
 });
