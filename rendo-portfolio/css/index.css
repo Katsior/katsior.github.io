@@ -39,7 +39,7 @@ h1, h2, h3, h4, p, a {
 	border:solid #fff;
 	float:right;
 	margin:50px auto;
-	transition: all 0.25s;
+	transition: all 0.2s;
 }
 
 .strip {
@@ -50,7 +50,7 @@ h1, h2, h3, h4, p, a {
 	margin:5px auto auto;
 	background:#fff;
 	top:-3px;
-	transition: all 0.25s;
+	transition: all 0.2s;
 }
 
 #menu-trigger:hover {
@@ -182,6 +182,88 @@ footer {
 	z-index:1;
 	height:250px;
 	background-color:#343642;
+}
+
+.social-foot {
+	overflow: hidden;
+	text-align: center;
+	max-width:1080px;
+	margin-left:auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 100px;
+}
+
+.social {
+	color:#696b7c;
+	display:inline-block;
+	font-size: 2em;
+	margin-right: 25px;
+	transition: color 0.2s;
+}
+
+.social:hover {
+	color:#fff;
+}
+
+
+.nav-overlay {
+
+	 height: 100%;
+	 width: 0;
+	 position: fixed;
+	 z-index: 100;
+	 left: 0;
+	 top: 0;
+	 background-color: #fff;
+	 overflow-x: hidden;
+	 transition: 0.5s;
+}
+
+
+.overlay-content {
+	 position: relative;
+	 top: 25%;
+	 max-width: 700px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 text-align: center;
+	 margin-top: 30px;
+}
+
+
+.nav-overlay a {
+	 padding: 8px;
+	 text-decoration: none;
+	 font-size: 36px;
+	 color: #348899;
+	 display: block;
+	 transition: 0.2s;
+}
+
+
+.nav-overlay a:hover, .overlay a:focus {
+	 color: #fff;
+	 background-color:#348899;
+}
+
+
+.closebtn {
+	 position: absolute;
+	 top: 20px;
+	 right: 45px;
+	 font-size: 60px !important;
+}
+
+
+@media screen and (max-height: 450px) {
+	 .nav-overlay a {font-size: 20px}
+	 .closebtn {
+			 font-size: 40px !important;
+			 top: 15px;
+			 right: 35px;
+	 }
 }
 
 

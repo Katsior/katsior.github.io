@@ -7,6 +7,8 @@
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script src="https://use.fontawesome.com/1411a843c1.js"></script>
+
 	</head>
 	<body>
     	<div id="header_wrap">
@@ -16,7 +18,7 @@
                     	<img src="images/logorp.png" alt="Rendo" />
                     </a>
                 </div>
-                <button id="menu-trigger" type="button">
+                <button id="menu-trigger" type="button" onclick="openNav()">
                     <div class="strip"></div>
                     <div class="strip"></div>
                     <div class="strip"></div>
@@ -30,27 +32,47 @@
         <div id="content">
         	<div class="grid-item">
             	<a href="#" class="one">
-                	<img class="image" src="http://placekitten.com/200/200" />
+                	<img class="image" src="http://placekitten.com/540/500" />
                     <div class="overlay">Test 1</div>
                 </a>
             </div>
             <div class="grid-item">
 							<a href="#" class="one">
-                	<img class="image" src="http://placekitten.com/200/200" />
+                	<img class="image" src="http://placekitten.com/540/500" />
                     <div class="overlay">Test 2</div>
                 </a>
             </div>
             <div class="grid-item-long">
 							<a href="#" class="one">
-                	<img class="image" src="http://placekitten.com/200/200" />
+                	<img class="image" src="http://placekitten.com/1080/500" />
                     <div class="overlay">Test 3</div>
                 </a>
             </div>
         </div>
 
         <footer>
+						<div class="social-foot">
+								<a href="#" class="social">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+								<a href="#" class="social">
+									<i class="fa fa-youtube" aria-hidden="true"></i>
+								</a>
+								<a href="#" class="social">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
 
+						</div>
         </footer>
+
+					<div id="nav" class="nav-overlay">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					  <div class="overlay-content">
+							<a href="#">Portfolio</a>
+					    <a href="#">About</a>
+					    <a href="#">Contact</a>
+					  </div>
+					</div>
         <script
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
