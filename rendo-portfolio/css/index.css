@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-h1, h2, h3, h4, p, a {
-	font-family: 'Cabin', sans-serif;
+h1, h2, h3, h4, a {
+	font-family: "Cabin", sans-serif;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
 }
 
 #header_wrap {
@@ -39,6 +44,10 @@ h1, h2, h3, h4, p, a {
 	border:solid #fff;
 	float:right;
 	margin:50px auto;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition:all 0.2s;
+	-o-transition: all 0.2s;
 	transition: all 0.2s;
 }
 
@@ -50,6 +59,10 @@ h1, h2, h3, h4, p, a {
 	margin:5px auto auto;
 	background:#fff;
 	top:-3px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition:all 0.2s;
+	-o-transition: all 0.2s;
 	transition: all 0.2s;
 }
 
@@ -68,6 +81,10 @@ h1, h2, h3, h4, p, a {
 	height:500px;
 	background-color:#348899;
 	top:0;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-ms-transition:all 0.7s;
+	-o-transition: all 0.7s;
 	transition:all 0.7s;
 	transform:translate(-100%,0);
 	-webkit-transform: translate(-100%, 0);
@@ -85,6 +102,10 @@ h1, h2, h3, h4, p, a {
 	text-align:center;
 	padding-top:250px;
 	font-size:2.6em;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-ms-transition:all 0.7s;
+	-o-transition: all 0.7s;
 	transition:all 0.7s;
 	transition-delay:0.5s;
 	transform:translate(-100%,0);
@@ -108,6 +129,10 @@ h1, h2, h3, h4, p, a {
 	margin-right:auto;
 	padding-bottom:100px;
 	overflow:hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition:all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	transition-delay:1s;
 	z-index:99;
@@ -116,7 +141,10 @@ h1, h2, h3, h4, p, a {
 .grid-item, .grid-item-long {
 	height:500px;
 	float:left;
-	background-color:#4F4F4F;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition:all 0.25s;
+	-o-transition: all 0.25s;
 	transition:all 0.25s;
 	overflow: hidden;
 }
@@ -129,10 +157,6 @@ h1, h2, h3, h4, p, a {
 	width:100%;
 }
 
-/*.grid-item:hover, .grid-item-long:hover {
-	background-color:#fff;
-}*/
-
 .image {
 	display:block;
 	margin:0;
@@ -142,6 +166,10 @@ h1, h2, h3, h4, p, a {
 }
 
 .overlay {
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
 	transition:transform 0.3s;
 	transform:translate(-100%,0);
 	width:100%;
@@ -154,6 +182,7 @@ h1, h2, h3, h4, p, a {
 	vertical-align:middle;
 	line-height:500px;
 }
+
 
 .grid-item a, .grid-item-long a {
 	position: relative;
@@ -170,8 +199,11 @@ h1, h2, h3, h4, p, a {
 }
 
 .grid-item a:hover .overlay, .grid-item-long a:hover .overlay{
-
 	transform:translate(0,0);
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
 	transition:transform 0.3s;
 }
 
@@ -199,8 +231,23 @@ footer {
 	color:#696b7c;
 	display:inline-block;
 	font-size: 2em;
-	margin-right: 25px;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
 	transition: color 0.2s;
+}
+
+.social:not(:last-child) {
+	margin-right: 25px;
+}
+
+footer p {
+	color:#696b7c;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
 }
 
 .social:hover {
@@ -218,6 +265,10 @@ footer {
 	 top: 0;
 	 background-color: #fff;
 	 overflow-x: hidden;
+	 -webkit-transition: 0.5s;
+ 	-moz-transition:0.5s;
+ 	-ms-transition: 0.5s;
+ 	-o-transition: 0.5s;
 	 transition: 0.5s;
 }
 
@@ -239,6 +290,10 @@ footer {
 	 font-size: 36px;
 	 color: #348899;
 	 display: block;
+	 -webkit-transition: 0.2s;
+ 	-moz-transition: 0.2s;
+ 	-ms-transition: 0.2s;
+ 	-o-transition: 0.2s;
 	 transition: 0.2s;
 }
 
