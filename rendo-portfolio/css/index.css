@@ -25,6 +25,7 @@ p {
 	padding-right:100px;
 }
 
+
 .logo {
 	height:50px;
 	float:left;
@@ -65,6 +66,11 @@ p {
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
 }
+
+.about .strip {
+	background:rgba(115,115,115,1.00);
+}
+
 
 #menu-trigger:hover {
 	background:#fff;
@@ -117,6 +123,10 @@ p {
 
 #top-img h1 span {
 	color:#343642;
+}
+
+.about-header {
+
 }
 
 #content {
@@ -205,6 +215,16 @@ p {
 	-ms-transition: transform 0.3s;
 	-o-transition: transform 0.3s;
 	transition:transform 0.3s;
+}
+
+.about {
+	text-align: center;
+}
+
+.about p {
+	padding:25px;
+	font-size: 1.1em;
+	line-height: 1.5em;
 }
 
 footer {
