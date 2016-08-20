@@ -67,10 +67,12 @@ p {
 	transition: all 0.2s;
 }
 
-.about .strip {
+.about #menu-trigger {
+		background-color:#fff;
+	}
+.about #menu-trigger .strip {
 	background:rgba(115,115,115,1.00);
 }
-
 
 #menu-trigger:hover {
 	background:#fff;
@@ -130,6 +132,7 @@ p {
 }
 
 #content {
+	position:relative;
 	background:#fff;
 	max-width:1080px;
 	height:auto;
@@ -221,10 +224,19 @@ p {
 	text-align: center;
 }
 
+.about .grid-item-long {
+	height:auto;
+
+}
+
 .about p {
 	padding:25px;
 	font-size: 1.1em;
 	line-height: 1.5em;
+}
+
+.about p a {
+	color:#000;
 }
 
 footer {
