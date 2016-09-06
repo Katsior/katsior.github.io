@@ -128,13 +128,6 @@ p {
 	color:#343642;
 }
 
-.bakura {
-	background-image: url(../images/bakura/large.PNG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 #content {
 	position:relative;
 	background:#fff;
@@ -229,12 +222,16 @@ p {
 	text-align: center;
 }
 
-.about .grid-item-long {
+#content .about {
 	height:auto;
-
 }
 
-.about p {
+.portfolio {
+	background: #e9e9eb!important;
+	max-width: 1400px!important;
+}
+
+.about p, .about h1 {
 	padding:25px;
 	font-size: 1.1em;
 	line-height: 1.5em;
@@ -242,6 +239,109 @@ p {
 
 .about p a {
 	color:#000;
+}
+
+.about .image {
+	max-width:1400px;
+	margin-bottom:200px;
+	overflow:hidden;
+}
+
+.defensie {
+	background-image: url(../images/defensie/ORB_6394.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.break {
+	max-width: 1400px;
+	height:auto;
+	margin:100px auto 200px;
+	background:#343642;
+	padding:100px;
+}
+
+.anim {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-height:400px;
+	margin-bottom: 0!important;
+}
+
+.card {
+	margin:100px auto 200px;
+	max-width: 1400px;
+	color:#1a1924;
+	overflow: hidden;
+}
+
+.description-item {
+	background:#fff;
+	padding: 100px;
+	overflow: hidden;
+}
+
+.desc-title {
+	width:65%;
+	float:left;
+}
+
+.desc-title h1 {
+	font-size:36px;
+	text-transform: uppercase;
+	text-align: left;
+	margin:auto auto 35px;
+	width:100%;
+	float:left;
+	letter-spacing: 2px;
+	padding:0;
+}
+
+.desc-title p {
+	font-size:16px;
+	text-align: left;
+	line-height: 30px;
+	padding:0;
+	color:#8a8a8a;
+}
+
+.right {
+	max-width:275px;
+	float:left;
+	height:100%;
+	margin-left: 125px;
+}
+
+.desc {
+	margin-bottom: 27px;
+}
+
+.desc span, .smll {
+	font-family: "Cabin", sans-serif;
+	height:auto;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 17px;
+	display: block;
+	text-align: left;
+}
+
+.smll {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.desc p {
+	font-family: "Open Sans", sans-serif;
+	height:auto;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 17px;
+	text-align: left;
+	padding:0;
 }
 
 footer {
@@ -377,6 +477,27 @@ footer p {
 	}
 }
 
+@media screen and (max-width: 950px){
+		.desc-title {
+			width:100%;
+			margin-bottom: 100px;
+		}
+
+		.right {
+			max-width: none;
+			width:100%;
+			margin:0;
+		}
+
+		.desc span, .desc p {
+			text-align: center;
+		}
+
+		.anim {
+			width:100%;
+		}
+}
+
 @media screen and (max-width: 520px){
 	.header {
 		padding-left:50px;
@@ -387,10 +508,13 @@ footer p {
 		height:50px;
 	}
 
+
 	#menu-trigger {
 		margin-left:auto;
 		margin-right:auto;
 	}
+
+
 }
 
 @media screen and (max-width: 400px){
