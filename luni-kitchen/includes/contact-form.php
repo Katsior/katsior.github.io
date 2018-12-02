@@ -6,10 +6,13 @@ $option = json_decode($string);
 define("MAIL_HOST", $option->MAIL_HOST);
 define("MAIL_TITLE", $option->MAIL_TITLE);
 
-if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['msg'])){
+if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['date']) && isset($_POST['time']) && isset($_POST['people']) ){
     $name = $_POST['name'];
+    $people = $_POST['people'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
     $email = $_POST['email'];
-    $msg = nl2br($_POST['msg']);
+    $phone = $_POST['phone'];
     if (MAIL_HOST != null) {
         $to = MAIL_HOST;
     } else {
@@ -19,9 +22,9 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['msg'])){
     if (MAIL_TITLE != null) {
         $subject = MAIL_TITLE;
     } else {
-        $subject = 'Booking] Reservation Form';
+        $subject = '[Booking] Reservation Form';
     }
-    $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br> <p>'.$msg.'</p>';
+    $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br><b>People:</b> '.$people' <br> <b>Time:</b><p>'.$time.'</p> <b>Date:</b><p>'.$date'</p>';
     $headers = "From: $from\n";
     $headers .= "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\n";
