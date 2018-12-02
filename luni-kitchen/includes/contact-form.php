@@ -24,7 +24,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['date']) && 
     } else {
         $subject = '[Booking] Reservation Form';
     }
-    $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br><b>People:</b> '.$people' <br> <b>Time:</b><p>'.$time.'</p> <b>Date:</b><p>'.$date'</p>';
+    $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br><b>People:</b> '.$people' <br> <b>Time:</b><p>'.$time.'</p> <b>Date:</b><p>'.$date'</p> <b>Phone:</b><p>'.$phone'</p>';
     $headers = "From: $from\n";
     $headers .= "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\n";
