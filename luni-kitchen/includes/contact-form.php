@@ -19,7 +19,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['msg'])){
     if (MAIL_TITLE != null) {
         $subject = MAIL_TITLE;
     } else {
-        $subject = '[Consulting] Contact Form Message';
+        $subject = 'Booking] Reservation Form';
     }
     $message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.' <br> <p>'.$msg.'</p>';
     $headers = "From: $from\n";
